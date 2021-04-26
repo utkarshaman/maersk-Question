@@ -1,0 +1,132 @@
+body{
+    background-color:white;
+    padding:0px;
+    margin:0px;
+}
+
+html{
+    background-color: #efefef;
+}
+
+.parentDiv{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.parentDiv .header{
+    padding:10px;
+    font-weight:bold;
+}
+.parentDiv .footer{
+    padding:10px;
+    font-style: italic;
+    background-color: #efefef;
+}
+
+
+
+.gridContainer{
+    display: inline-flex;
+    width:100%;
+    border-top:5px solid grey;  
+    background-color: #efefef;
+}
+
+.gridContainer .flexLeft{
+    float:left;
+    width: 100%;
+}
+
+.gridContainer .flexRight{
+    width: 25%;
+    float:left;
+}
+.gridContainer .flexRight input[type="button" i]{
+    background-color: #72c3dc;
+    color:white;
+    border:none;
+    width:80%;
+    margin:10px;
+    padding:12px;
+    border-radius: 5px;
+    border-bottom: 5px solid #2b8ead;
+}
+
+
+.listGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+    margin:0px;
+}
+.gridItem {  
+    padding: 20px;
+    line-height: 120px;
+    height: 120px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #fff;
+  }
+ul {list-style: none;}
+
+@media (max-width:375px){
+    body{
+        background-color: black;
+        color:white;
+    }
+    .listGrid {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0px;
+        margin:0px;
+    }
+    .gridContainer .flexLeft{
+        width: 100%;
+        padding-top:70px;
+    }
+
+    .gridContainer{
+        background-color: white;
+        border:10px solid black;  
+        background-color: #fff;
+        box-sizing:border-box;
+        border-bottom:none;
+    }
+    
+    .gridContainer .flexRight{
+        width: 100%;
+        position: absolute;
+    }
+    .gridItem {
+        margin: 7px 22px 0 15px;
+        line-height: 20px;
+        height: 20px;
+        color: black;
+        font-weight: normal;
+        font-size: 30px;
+        border-left: 10px solid;
+        background-color: #efefef !important;
+      }
+      .gridContainer .flexRight input[type="button" i]{
+        background-color: #72c3dc;
+        color:white;
+        border:none;
+        width:30%;
+        margin:10px;
+        padding:15px;
+        border-radius: 5px;
+        border-bottom: 5px solid #2b8ead;
+    }
+    .parentDiv .footer{
+        padding:10px;
+        font-style: italic;
+        background-color:white;
+        border:10px solid black;
+        border-top:none;
+        color:black;
+    }
+    
+  }
